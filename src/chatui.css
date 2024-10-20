@@ -1,0 +1,58 @@
+.chat-ui {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.message-list {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.message.user {
+    background-color: #e6f2ff;
+    text-align: right;
+}
+
+.message.assistant {
+    background-color: #f0f0f0;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px;
+}
+
+.typing-indicator {
+  display: inline-block;
+  width: 20px;
+  text-align: left;
+  animation: typing 1s steps(5, end) infinite;
+}
+
+@keyframes typing {
+  0% { content: ''; }
+  20% { content: '.'; }
+  40% { content: '..'; }
+  60% { content: '...'; }
+  80% { content: '....'; }
+  100% { content: '.....'; }
+}
